@@ -1,0 +1,11 @@
+from nginx
+COPY index.htm /usr/share/nginx/html
+COPY prisma.png /usr/share/nginx/html
+COPY uj47G/index.htm /usr/share/nginx/html/uj47G/
+COPY uj47G/prisma-left.png /usr/share/nginx/html/uj47G/
+COPY .htpasswd /etc/nginx/conf.d/
+COPY myweb.conf /etc/nginx/conf.d/default.conf
+COPY myweb.crt /etc/nginx/certs/
+COPY myweb.key /etc/nginx/certs/
+COPY common.conf /etc/nginx/conf.d
+COPY ssl.conf /etc/nginx/conf.d/
